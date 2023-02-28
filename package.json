@@ -1,0 +1,39 @@
+{
+  "name": "diskubre-palawan",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@next/font": "13.1.6",
+    "@reduxjs/toolkit": "^1.9.2",
+    "@types/node": "18.13.0",
+    "@types/react": "18.0.28",
+    "@types/react-dom": "18.0.10",
+    "dotenv": "^16.0.3",
+    "eslint": "8.34.0",
+    "eslint-config-next": "13.1.6",
+    "immutability-helper": "^3.1.1",
+    "next": "13.1.6",
+    "react": "18.2.0",
+    "react-datepicker": "^4.10.0",
+    "react-dom": "18.2.0",
+    "react-modal-video": "^2.0.0",
+    "react-redux": "^8.0.5",
+    "react-select": "^5.7.0",
+    "redux": "^4.2.1",
+    "redux-first-router": "^2.1.5",
+    "redux-saga": "^1.2.2",
+    "sass": "^1.58.0",
+    "simple-react-lightbox": "^3.6.9-0",
+    "swiper": "^9.0.4",
+    "typescript": "4.9.5"
+  },
+  "devDependencies": {
+    "@types/redux-first-router": "^2.1.8"
+  }
+}
