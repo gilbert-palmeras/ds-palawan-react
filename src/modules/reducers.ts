@@ -6,7 +6,7 @@ import { destinationReducers } from '@modules/destinations/reducer';
 import { blogReducers } from '@modules/blogs/reducer';
 
 const reducers = combineReducers({
-	tourPackage: tourPackageReducers,
+	tourPackages: tourPackageReducers,
 	transfer: transferReducers,
 	tourGuide: tourGuideReducers,
 	destination: destinationReducers,

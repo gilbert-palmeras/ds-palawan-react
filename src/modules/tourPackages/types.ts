@@ -7,7 +7,9 @@ export enum Actions {
 };
 
 export type TTourPackage = {
-    name: string;
+    image: string;
+    date: string;
+    title: string;
     price: number;
 };
 
