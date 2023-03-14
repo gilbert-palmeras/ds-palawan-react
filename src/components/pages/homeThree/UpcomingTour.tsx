@@ -168,7 +168,7 @@ const mapStateToProps = (state: RootState) => ({
 });
 
 const mapDispatchToProps = {
-	getTourPackages: tourPackagesAction.getTourPackagesAction
+	getTourPackages: tourPackagesAction.getTourPackages
 };
 
 const connector = connect(mapStateToProps, mapDispatchToProps);
