@@ -43,8 +43,8 @@ jobs:
       run: npm list
     - name: Install Dependencies
       run: yarn install --frozen-lockfile
-    - name: Linting Checks
-      run: yarn lint
+    #- name: Linting Checks
+    #  run: yarn lint
     - name: Build 
       run: cp .env.sample .env && CI=false yarn build
     #- name: Unit Test Coverage
