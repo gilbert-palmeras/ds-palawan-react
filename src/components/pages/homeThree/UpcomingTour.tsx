@@ -1,4 +1,4 @@
-import { useContext, FunctionComponent } from 'react';
+import { useContext, FunctionComponent, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -20,6 +20,10 @@ SwiperCore.use([Navigation, Pagination, EffectFade]);
 type Props = ReduxProps;
 
 const UpcomingTour: FunctionComponent<Props> = ({ tourPackages, getTourPackages }) => {
+
+    useEffect(() => {
+        getTourPackages()
+    }, [])
 
     const upcommingTour = {
         slidesPerView: 1,
