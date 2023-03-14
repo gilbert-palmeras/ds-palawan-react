@@ -1,10 +1,21 @@
+import { FunctionComponent, useEffect } from 'react';
 import Link from 'next/link';
 
 import PackageCard from '../packageGrid/PackageCard';
-import { tourPackages } from '@constants/tourPackages';
 
-function OfferArea() {
+import { RootState } from '@app/store';
+import { connect, ConnectedProps } from 'react-redux';
+
+import * as tourPackagesActions from '@modules/tourPackages/action'; 
+
+type Props = ReduxProps;
+
+const OfferArea: FunctionComponent<Props> = ({ tourPackages, getTourPackages }) => {
   const scrollTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+
+  useEffect(() => {
+    getTourPackages()
+  }, [])
 
   return (
     <>
@@ -46,4 +57,16 @@ function OfferArea() {
   );
 }
 
-export default OfferArea;
+const mapStateToProps = (state: RootState) => ({
+	tourPackages: state.tourPackages.tourPackage.tours,
+});
+
+const mapDispatchToProps = {
+	getTourPackages: tourPackagesActions.getTourPackages
+};
+
+const connector = connect(mapStateToProps, mapDispatchToProps);
+
+type ReduxProps = ConnectedProps<typeof connector>;
+
+export default connector(OfferArea)
