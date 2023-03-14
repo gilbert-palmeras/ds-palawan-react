@@ -5,6 +5,7 @@ import PackageCard from '../packageGrid/PackageCard';
 
 import { RootState } from '@app/store';
 import { connect, ConnectedProps } from 'react-redux';
+import Image from 'next/image';
 
 import * as tourPackagesActions from '@modules/tourPackages/action'; 
 

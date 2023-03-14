@@ -1,4 +1,5 @@
 import { useContext, FunctionComponent, useEffect } from 'react';
+import Image from 'next/image';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Autoplay, Navigation } from 'swiper';

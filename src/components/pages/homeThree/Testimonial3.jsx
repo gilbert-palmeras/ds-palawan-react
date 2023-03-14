@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 // import Swiper core and required modules
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { EffectFade, Navigation, Pagination } from 'swiper';
