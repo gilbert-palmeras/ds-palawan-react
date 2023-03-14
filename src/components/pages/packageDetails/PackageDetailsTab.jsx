@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { SRLWrapper } from 'simple-react-lightbox';
 import ModalVideo from 'react-modal-video';
 

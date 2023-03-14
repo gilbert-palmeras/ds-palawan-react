@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 function BlogCardAlpha(props) {
   const scrollTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });

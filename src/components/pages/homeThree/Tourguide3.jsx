@@ -1,5 +1,6 @@
 import { useContext } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 import { MockContext } from '../../../context';
 
@@ -26,7 +27,7 @@ function Tourguide3() {
           </div>
           <div className="row d-flex justify-content-center g-4">
             {data.tourGuides.map((tourGuide, i) => (
-              <div className="col-lg-4 col-md-6 col-md-10">
+              <div key={`tour-${i}`} className="col-lg-4 col-md-6 col-md-10">
                 <div className="guide-card-beta">
                   <div className="guide-image">
                     <Image src={tourGuide.image} alt="guide images" />
