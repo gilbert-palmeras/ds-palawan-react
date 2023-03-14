@@ -2,14 +2,15 @@ import { call, put, all, takeLatest } from '@redux-saga/core/effects';
 import { SagaIterator } from '@redux-saga/types';
 import { api, Response } from '@app/helpers/api';
 import { Actions, Destination } from '@modules/destinations/types';
+import { destinations } from '@constants/destinations';
 
 export function* getDestination(): SagaIterator{
     try {
-        const { data }: Response<{ data: Destination[] }> = yield call(api, {
-            url: '/destination/get-destination',
-            method: 'get'
-        })
-        yield put({ type: Actions.GET_DESTINATION_FULFILLED, payload: data.data })
+        // const { data }: Response<{ data: Destination[] }> = yield call(api, {
+        //     url: '/destination/get-destination',
+        //     method: 'get'
+        // })
+        yield put({ type: Actions.GET_DESTINATION_FULFILLED, payload: destinations })
     } catch (error) {
         yield put({ type: Actions.GET_DESTINATION_REJECTED, payload: undefined })
     }

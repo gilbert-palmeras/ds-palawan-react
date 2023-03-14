@@ -26,7 +26,6 @@ const MainPage: FunctionComponent = () => {
 
 export async function getServerSideProps() {
   const tours = await getTourPackages();
-  console.log(tours);
   const tourGuides = await getTourGuides();
   const blogs = await getBlogs();
   const destinations = await getDestinations();
