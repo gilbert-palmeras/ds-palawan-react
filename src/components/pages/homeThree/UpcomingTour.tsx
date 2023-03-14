@@ -5,12 +5,9 @@ import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { EffectFade, Navigation, Pagination } from 'swiper';
 
-// import { MockContext } from '../../../context';
-import { tourPackages } from '@constants/tourPackages';
-
 import { connect, ConnectedProps } from 'react-redux';
 
-import { RootState } from '@modules/reducers';
+import { RootState } from '@app/store';
 import * as tourPackagesAction from '@modules/tourPackages/action';
 import { TTourPackage } from '@modules/tourPackages/types';
 
@@ -20,11 +17,10 @@ const scrollTop = () => {
   
 SwiperCore.use([Navigation, Pagination, EffectFade]);
 
-type Props = ReduxProps
+type Props = ReduxProps;
 
-const UpcomingTour: FunctionComponent<Props> = ({ tourPackages }) => {
-    console.log(tourPackages)
-    // const { data } = useContext(MockContext);
+const UpcomingTour: FunctionComponent<Props> = ({ tourPackages, getTourPackages }) => {
+
     const upcommingTour = {
         slidesPerView: 1,
         speed: 1000,
