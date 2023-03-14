@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation } from 'swiper';
 import { SRLWrapper } from 'simple-react-lightbox';

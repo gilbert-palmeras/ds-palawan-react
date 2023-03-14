@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import WidgetForm from './WidgetForm';
 import WidgetPackageOffer from './WidgetPackageOffer';
 import WidgetPackageTag from './WidgetPackageTag';

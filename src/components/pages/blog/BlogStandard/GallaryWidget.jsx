@@ -1,5 +1,7 @@
 import React from 'react';
 import { SRLWrapper } from 'simple-react-lightbox';
+import Image from 'next/image';
+
 function GallaryWidget() {
   return (
     <>

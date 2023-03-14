@@ -1,17 +1,27 @@
-import { useContext } from 'react';
+import { useContext, FunctionComponent, useEffect } from 'react';
+import Image from 'next/image';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Autoplay, Navigation } from 'swiper';
 
 import HomeOneDestinationCart from './HomeOneDestinationCart';
 import { MockContext } from '../../../context';
-import { destinations } from '@constants/destinations';
+
+import { RootState } from '@app/store';
+
+import * as destinationActions from '@modules/destinations/actions';
+import { connect, ConnectedProps } from 'react-redux';
 
 // install Swiper modules
 SwiperCore.use([Navigation, Autoplay]);
 
-function DestinationArea() {
-  const { data } = useContext(MockContext);
+type Props = ReduxProps
+
+const DestinationArea: FunctionComponent<Props> = ({ destinations, getDestinations}) => {
+
+  useEffect(() => {
+    getDestinations()
+  }, [])
 
   const destinationSlider = {
     slidesPerView: 1,
@@ -101,4 +111,16 @@ function DestinationArea() {
   );
 }
 
-export default DestinationArea;
+const mapStateToProps = (state: RootState) => ({
+	destinations: state.destination.destinationList.destination,
+});
+
+const mapDispatchToProps = {
+	getDestinations: destinationActions.getDestinations
+};
+
+const connector = connect(mapStateToProps, mapDispatchToProps);
+
+type ReduxProps = ConnectedProps<typeof connector>;
+
+export default connector(DestinationArea)
