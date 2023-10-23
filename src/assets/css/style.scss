@@ -4609,7 +4609,7 @@ header .header-style-two {
     height: 100%;
     background: rgba(0, 5, 15, 0);
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: flex-end;
 
     .content{
@@ -6244,7 +6244,7 @@ header .header-style-two {
       align-items: center;
       display: flex;
       flex-wrap: wrap;
-      justify-content: start;
+      justify-content: flex-start;
       padding-top: 10px;
       gap: 30px;
       a {
@@ -8731,14 +8731,14 @@ header .header-style-two {
       .reviewer-rating{
         padding-top: 20px;
         display: flex;
-        justify-content: end;
+        justify-content: flex-end;
         .bi{
           color: var(--c-primary);
         }
       }
       .reviewr-info{
         display: flex;
-        justify-content: start;
+        justify-content: flex-start;
         align-items: center;
 
         .single-thumb{
@@ -8852,14 +8852,14 @@ header .header-style-two {
       .reviewer-rating{
         padding-top: 5px;
         display: flex;
-        justify-content: end;
+        justify-content: flex-end;
         .bi{
           color: var(--c-primary);
         }
       }
       .reviewr-info{
         display: flex;
-        justify-content: start;
+        justify-content: flex-start;
         align-items: center;
 
         .single-thumb{

@@ -5141,7 +5141,7 @@ header .header-style-two .nav-right .nav-right-hotline .hotline-info h6 a {
   display: flex;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
-          justify-content: start;
+          justify-content: flex-start;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
@@ -6966,7 +6966,7 @@ header .header-style-two .nav-right .nav-right-hotline .hotline-info h6 a {
       flex-wrap: wrap;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
-          justify-content: start;
+          justify-content: flex-start;
   padding-top: 10px;
   gap: 30px;
 }
@@ -9704,7 +9704,7 @@ header .header-style-two .nav-right .nav-right-hotline .hotline-info h6 a {
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: end;
+          justify-content: flex-end;
 }
 
 .testimonial-card-gamma .testimonial-card-body .testimonial-info .reviewer-rating .bi {
@@ -9717,7 +9717,7 @@ header .header-style-two .nav-right .nav-right-hotline .hotline-info h6 a {
   display: flex;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
-          justify-content: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -9842,7 +9842,7 @@ header .header-style-two .nav-right .nav-right-hotline .hotline-info h6 a {
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: end;
+          justify-content: flex-end;
 }
 
 .testimonial-card-beta .testimonial-card-body .testimonial-info .reviewer-rating .bi {
@@ -9855,7 +9855,7 @@ header .header-style-two .nav-right .nav-right-hotline .hotline-info h6 a {
   display: flex;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
-          justify-content: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
